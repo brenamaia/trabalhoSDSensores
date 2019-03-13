@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="149dp"
+        android:onClick="send_text"
+        android:text="Enviar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_finalizar" />
+
+    <Button
+        android:id="@+id/btn_finalizar"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="finalizaColeta"
+        android:text="Finalizar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_iniciar" />
+
+    <Button
+        android:id="@+id/btn_iniciar"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="54dp"
+        android:onClick="iniciaColeta"
+        android:text="Iniciar"
+        app:layout_constraintBottom_toTopOf="@+id/btn_finalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
